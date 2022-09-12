@@ -1,0 +1,170 @@
+{
+	"id": "1ad14884-91a9-454e-886c-ef9f578ae325",
+	"name": "API Training: First API Test",
+	"timestamp": "2022-09-12T21:22:17.834Z",
+	"collection_id": "22791120-e68c6fc2-1659-4495-bf8e-cf2aabb42b23",
+	"folder_id": 0,
+	"environment_id": "22791120-ffad2aeb-211a-485c-b6a9-5179172d4068",
+	"totalPass": 6,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "05033d07-7c22-4ad2-8bd1-988590a9d717",
+			"name": "Get a single book: Valid book Id",
+			"url": "https://simple-books-api.glitch.me/books/6",
+			"time": 426,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				426
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "13aa210b-a970-4874-957c-c571e87fbe27",
+			"name": "Get a single book: Non-fiction book Id",
+			"url": "https://simple-books-api.glitch.me/books/2",
+			"time": 359,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				359
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8c441592-7d39-4de7-b74f-47f51685f134",
+			"name": "Get a single book: Blank Id",
+			"url": "https://simple-books-api.glitch.me/books/",
+			"time": 508,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				508
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b7ac8106-b4e0-4388-8ce2-63ec41a3b4ee",
+			"name": "Get Status",
+			"url": "https://simple-books-api.glitch.me/",
+			"time": 752,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string OK": true,
+				"The message value of the test should be Welcome to the Simple Books API. ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The message value of the test should be Welcome to the Simple Books API. ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				752
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string OK": true,
+					"The message value of the test should be Welcome to the Simple Books API. ": true
+				}
+			]
+		},
+		{
+			"id": "d785cb00-1acb-4ba8-8ad7-28aa672fd803",
+			"name": "Get Books",
+			"url": "https://simple-books-api.glitch.me/books?type=fiction",
+			"time": 477,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Search for a book name called Viscount Who Loved Me": true,
+				"The id number of a fiction book that available with the name The Midnight Library is ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Search for a book name called Viscount Who Loved Me": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The id number of a fiction book that available with the name The Midnight Library is ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				477
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Search for a book name called Viscount Who Loved Me": true,
+					"The id number of a fiction book that available with the name The Midnight Library is ": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2522,
+	"collection": {
+		"requests": [
+			{
+				"id": "05033d07-7c22-4ad2-8bd1-988590a9d717",
+				"method": "GET"
+			},
+			{
+				"id": "13aa210b-a970-4874-957c-c571e87fbe27",
+				"method": "GET"
+			},
+			{
+				"id": "8c441592-7d39-4de7-b74f-47f51685f134",
+				"method": "GET"
+			},
+			{
+				"id": "b7ac8106-b4e0-4388-8ce2-63ec41a3b4ee",
+				"method": "GET"
+			},
+			{
+				"id": "d785cb00-1acb-4ba8-8ad7-28aa672fd803",
+				"method": "GET"
+			}
+		]
+	}
+}
